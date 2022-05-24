@@ -4,6 +4,13 @@ var myButton = document.querySelector("#recognize"),
     showImage = document.querySelector("#showImage");
     recognizedTxt = document.querySelector("#recognizedText");
 
+// Check type of device and add/remove class
+if (AFRAME.utils.device.isMobile() === true || !AFRAME.utils.checkHeadsetConnected() === true) {
+    document.querySelector("#drawingArea").setAttribute("class", "none"); 
+  } else {
+    document.querySelector("#drawingArea").setAttribute("class", "clickable");
+  }
+
 // Get texure
 myButton.addEventListener("click", function () {
     var mesh3D = plane.getObject3D('mesh');
