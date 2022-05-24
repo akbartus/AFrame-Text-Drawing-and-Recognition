@@ -17,17 +17,20 @@ To enable drawing component:
 
 If necessary define the attribute parameters (color: color; background: color; size: numeric;  eraseAll: boolean), for example:
 ``` texture-painter="color: green; background: red; size: 15" ```
-3. Make sure to make primitive, where drawing will take place, is <b>clickable if used with VR</b> or <b>withouth if it is mobile or desktop</b>. In other words apply a class name and use cursor: ``` <a-entity cursor="rayOrigin: mouse" raycaster="objects: .clickable;"></a-entity> ```
+3. Make sure to make primitive, where drawing will take place, is <b>clickable if used with VR</b> or <b>withouth if it is mobile or desktop</b>. In other words apply a class name and use cursor and raycaster:
 
 VR: 
 ```
 <a-plane texture-painter class="clickable" position="0 1.5 -4" rotation="0 0 0" width="5" height="4"></a-plane>
+<a-entity class="controller" laser-controls="hand: left" raycaster="objects: .clickable;" line="color: #000000"></a-entity>
+<a-entity class="controller" laser-controls="hand: right" raycaster="objects: .clickable;" line="color: #000000"></a-entity>
 ```
 Mobile: 
 ```
 <a-plane texture-painter position="0 1.5 -4" rotation="0 0 0" width="5" height="4"></a-plane>
+<a-entity cursor="rayOrigin: mouse" raycaster="objects: .clickable;"></a-entity>
 ```
-Text recoginition and image generation based on text is enabled through API endpoints. See them in the example code. 
+Text recoginition and image generation based on text is enabled through API endpoints. See how everything works in the provided example. 
 
 ### **Tech Stack**
 The project is powered by AFrame and HuggingFace hosted API endpoints.
