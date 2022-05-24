@@ -16,9 +16,9 @@
 
 <body>
     <a-scene>
-        <a-plane id="drawingArea" class="clickable" texture-painter position="0 1 -4" rotation="0 0 0" width="5"
+        <a-plane id="drawingArea" texture-painter position="0 1 -4" rotation="0 0 0" width="5"
             height="4"></a-plane>
-        <a-plane id="showImage" position="-3 1 -3" rotation="0 0 0" width="2" height="2" visible="false"></a-plane>
+        <a-plane id="showImage" rotation="0 15 0" position="-3 1 -3" rotation="0 0 0" width="2" height="2" visible="false"></a-plane>
         <a-sky color='#ECECEC'></a-sky>
         <a-entity id="recognize" class="clickable" position="-1.5 0 -3" geometry="primitive: plane; height: 0.3"
             text="value: Recognize; align: center; width: 3;" material="color: black"></a-entity>
@@ -26,7 +26,8 @@
             text="value: Recognized Text; align: center; width: 2;" material="color: blue"></a-entity>
         <a-entity id="erase" class="clickable" position="1.5 0 -3" geometry="primitive: plane; height: 0.3;"
             text="value: Erase; align: center; width: 3;" material="color: black"></a-entity>
-        <a-entity camera wasd-controls look-controls="enabled: true" position="0 1.3 0.1"></a-entity>
+   
+        <a-entity cursor="rayOrigin: mouse" raycaster="objects: .clickable;"></a-entity>
         <a-entity class="controller" laser-controls="hand: left" raycaster="objects: .clickable;" line="color: #000000">
         </a-entity>
         <a-entity class="controller" laser-controls="hand: right" raycaster="objects: .clickable;"
