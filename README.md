@@ -2,7 +2,7 @@
 <img alt="Screenshot" src="img/screenshot.jpg" width="600">
 
 ### **Description / Rationale**
-This is an exploratory project, which demonstrates the drawing and text recognition possibilities in web VR environment. Drawing part represents the reduced and slightly adapted version of Marlon Lückert's <a href="https://github.com/marlon360/whiteboard-vr">"Whiteboars VR"</a>. Text recognition part is made available through Microsoft’s TrOCR model, hosted on HuggingFace. Recognized text is turned into image through another AI model hosted on HuggingFace. 
+This is an exploratory project, which demonstrates the drawing and text recognition possibilities in web VR environment. Drawing part represents the reduced and slightly adapted version of Marlon Lückert's <a href="https://github.com/marlon360/whiteboard-vr">"Whiteboard VR"</a>. Text recognition part is made available through Microsoft’s <a href="https://huggingface.co/spaces/nielsr/TrOCR-handwritten">TrOCR model</a>, hosted on HuggingFace. Recognized text is turned into image through <a href="https://huggingface.co/spaces/smangrul/Text-To-Image">another AI model</a> hosted on HuggingFace. 
 
 ### **Instructions**
 To enable drawing component: 
