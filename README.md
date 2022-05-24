@@ -18,6 +18,7 @@ To enable drawing component:
 If necessary define the attribute parameters (color: color; background: color; size: numeric;  eraseAll: boolean), for example:
 ``` texture-painter="color: green; background: red; size: 15" ```
 3. Make sure to make primitive "texture-painter" is applied is <b>clickable if used with VR</b> or <b>withouth if it is mobile or desktop</b>:
+
 VR: 
 ```
 <a-plane texture-painter class="clickable" position="0 1.5 -4" rotation="0 0 0" width="5" height="4"></a-plane>
