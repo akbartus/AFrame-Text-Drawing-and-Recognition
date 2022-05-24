@@ -17,4 +17,4 @@ To see the project at work just copy the repository to your local server and exp
 The project is powered by AFrame.
 
 ### **Demo**
-To see the application at work: [Demo application](https://gltf-exporter.glitch.me/)
+To see the application at work: [Demo application](https://webvr-drawing.glitch.me/)
