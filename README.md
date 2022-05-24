@@ -17,7 +17,7 @@ To enable drawing component:
 
 If necessary define the attribute parameters (color: color; background: color; size: numeric;  eraseAll: boolean), for example:
 ``` texture-painter="color: green; background: red; size: 15" ```
-3. Make sure to make primitive "texture-painter" is applied is <b>clickable if used with VR</b> or <b>withouth if it is mobile or desktop</b>:
+3. Make sure to make primitive, where drawing will take place, is <b>clickable if used with VR</b> or <b>withouth if it is mobile or desktop</b>. In other words apply a class name and use cursor: ``` <a-entity cursor="rayOrigin: mouse" raycaster="objects: .clickable;"></a-entity> ```
 
 VR: 
 ```
