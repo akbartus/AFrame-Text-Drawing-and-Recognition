@@ -1,4 +1,4 @@
-# AFrame GLTF Exporter (updated version)
+# Text Drawing and Recognition in A-Frame (updated version)
 <img alt="Screenshot" src="img/screenshot.jpg" width="600">
 
 ### **Description / Rationale**
