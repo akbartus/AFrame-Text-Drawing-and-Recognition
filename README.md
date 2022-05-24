@@ -25,7 +25,7 @@ VR:
 <a-entity class="controller" laser-controls="hand: left" raycaster="objects: .clickable;" line="color: #000000"></a-entity>
 <a-entity class="controller" laser-controls="hand: right" raycaster="objects: .clickable;" line="color: #000000"></a-entity>
 ```
-Mobile: 
+Mobile/Desktop: 
 ```
 <a-plane texture-painter position="0 1.5 -4" rotation="0 0 0" width="5" height="4"></a-plane>
 <a-entity cursor="rayOrigin: mouse" raycaster="objects: .clickable;"></a-entity>
