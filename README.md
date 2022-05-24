@@ -30,7 +30,7 @@ Mobile/Desktop:
 <a-plane texture-painter position="0 1.5 -4" rotation="0 0 0" width="5" height="4"></a-plane>
 <a-entity cursor="rayOrigin: mouse" raycaster="objects: .clickable;"></a-entity>
 ```
-Text recoginition and image generation based on text is enabled through API endpoints. See how everything works in the provided example. 
+Text recoginition and image generation based on text are enabled through API endpoints. See how everything works in the provided example. 
 
 ### **Tech Stack**
 The project is powered by AFrame and HuggingFace hosted API endpoints.
